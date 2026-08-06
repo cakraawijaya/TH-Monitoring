@@ -9,7 +9,6 @@
 //setup modbus address
 #define TEMPERATURE_ADDRESS 100
 #define HUMIDITY_ADDRESS 101
-#define LED_ADDRESS 102
 
 //setup wifi
 const char* ssid = "YOUR_WIFI_NAME";
