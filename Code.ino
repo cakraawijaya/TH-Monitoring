@@ -12,7 +12,7 @@
 
 //setup wifi
 const char* ssid = "YOUR_WIFI_NAME";
-const char* password = "YOUR_WIFI_PASSWORD";
+const char* pass = "YOUR_WIFI_PASSWORD";
 
 //setup alamat IP
 IPAddress local_IP(192, 168, 1, 123);
