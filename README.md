@@ -242,7 +242,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 
 6. Install all the required Node-RED palettes.<br><br>
 
-7. Open the Import menu in Node-RED, then import the ``` flow_nodered.json ``` file located in the ``` TH-Monitoring/Src/ ``` directory. Make sure all flows have been successfully loaded.<br><br>
+7. Open the ``` Import ``` menu in Node-RED, then import ``` flow_nodered.json ``` in the ``` TH-Monitoring/Src/ ``` directory. Make sure all Node-RED flows have been successfully loaded.<br><br>
 
 8. Then, to run the flow, click ``` Deploy ```.
 
