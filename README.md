@@ -200,7 +200,51 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 <br><br>
 
 ## Node-RED Configuration
-Coming Soon...
+1. Open ``` Command Prompt (CMD) ```, then enter the following command to install Node-RED :
+
+   <table><tr><td width="810">
+
+   ```
+   npm install -g --unsafe-perm node-red
+   ```
+
+   </td></tr></table>
+
+   Wait until the installation is complete.<br><br>
+   
+2. To keep Node-RED secure, You need to set up authentication by running the following command :
+
+   <table><tr><td width="810">
+
+   ```
+   node-red admin init
+   ```
+
+   </td></tr></table>
+
+   Please select the options as shown in the ``` Node-RED Authentication ``` section. For the username and password, please choose your own as needed.<br><br>
+   
+3. Next, run Node-RED using the following command :
+
+   <table><tr><td width="810">
+
+   ```
+   node-red
+   ```
+
+   </td></tr></table>
+
+   Wait until the initialization process is complete and a message appears indicating that the server has started successfully.<br><br>
+
+4. After that, Node-RED is ready to be accessed via a web browser using the device's IP address on port 1880.<br><br>
+
+5. Then log in using the account you have configured as a security measure in Node-RED.<br><br>
+
+6. Install all the required Node-RED palettes.<br><br>
+
+7. Open the Import menu in Node-RED, then import the ``` flow_nodered.json ``` file located in the ``` TH-Monitoring/Src/ ``` directory. Make sure all flows have been successfully loaded.<br><br>
+
+8. Then, to run the flow, click ``` Deploy ```.
 
 <br><br>
 
@@ -251,7 +295,7 @@ Coming Soon...
 <br>
 <strong>More information:</strong> <a href="https://github.com/cakraawijaya/TH-Monitoring/blob/master/Assets/Documentation/Report/Portofolio%20Pelatihan%20Sertifikasi%20BNSP%20IIoT%20-%20Devan%20Cakra%20Mudra%20Wijaya-49-62.pdf"><u>Click Here</u></a>
 
-<br><br>
+<br><br><br>
 
 ## Appreciation
 If this work is useful to you, then support this work as a form of appreciation to the author by clicking the ``` ⭐Star ``` button at the top of the repository.
