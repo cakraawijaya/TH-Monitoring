@@ -20,8 +20,8 @@ Dasbor pemantauan lingkungan secara real-time — memantau suhu dan kelembapan d
 | Protokol Komunikasi | MODBUS TCP/IP |
 | Arsitektur IoT | 3 Layer |
 | Bahasa Pemrograman | C/C++ |
-| Pustaka Arduino | • WiFi (default)<br>• DHT sensor library oleh Adafruit (Versi: 1.4.6)<br>• modbus-esp8266 oleh Alexander Emelianov (Versi: 4.1.0) |
-| Palet Node-RED | • node-red (default)<br>• node-red-dashboard<br>• node-red-node-ui-table<br>• node-red-node-mysql<br>• node-red-contrib-modbus |
+| Pustaka Arduino | • WiFi (bawaan)<br>• DHT sensor library oleh Adafruit (Versi: 1.4.6)<br>• modbus-esp8266 oleh Alexander Emelianov (Versi: 4.1.0) |
+| Palet Node-RED | • node-red (bawaan)<br>• node-red-dashboard<br>• node-red-node-ui-table<br>• node-red-node-mysql<br>• node-red-contrib-modbus |
 | Sensor | DHT11: Suhu & Kelembapan Udara (x1) |
 | Komponen Lainnya | • Kabel USB Mikro - USB tipe A (x1)<br>• Papan ekspansi ESP32 (x1)<br>• Adaptor DC 9V 1A (x1)<br>• Kabel jumper (1 set) |
 
