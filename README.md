@@ -19,7 +19,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 | Communications Protocol | MODBUS TCP/IP |
 | IoT Architecture | 3 Layer |
 | Programming Language | C/C++ |
-| Arduino Library | • WiFi (default)<br>• DHT sensor library by Adafruit (Version: 1.4.6)<br>• modbus-esp8266 by Andre Sarmento Barbosa, Alexander Emelianov (Version: 4.1.0) |
+| Arduino Library | • WiFi (default)<br>• DHT sensor library by Adafruit (Version: 1.4.6)<br>• modbus-esp8266 by Alexander Emelianov (Version: 4.1.0) |
 | Sensor | DHT11: Air Temperature & Humidity (x1) |
 | Other Components | • Micro USB cable - USB type A (x1)<br>• ESP32 expansion board (x1)<br>• Adaptor DC 9V 1A (x1)<br>• Jumper cable (1 set) |
 
