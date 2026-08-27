@@ -60,6 +60,14 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 </table>
 <table>
 <tr>
+<th width="840">Software Design</th>
+</tr>
+<tr>
+<td align="center"><img src="Assets/Documentation/Diagram/Flowchart Firmware.jpg" alt="flowchart"></td>
+</tr>
+</table>
+<table>
+<tr>
 <th width="420">Pictorial Diagram</th>
 <th width="420">Block Diagram</th>
 </tr>
@@ -199,6 +207,9 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 <tr>
 <td width="420" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Config-1.jpg" alt="config-1"></td>
 <td width="420" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Config-2.jpg" alt="config-2"></td>
+</tr>
+<tr>
+<td width="840" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Login.jpg" alt="login"></td>
 </tr>
 </table>
 <table>
