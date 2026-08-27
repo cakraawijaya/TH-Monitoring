@@ -222,7 +222,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 
    </td></tr></table>
 
-   Please select the options as shown in the ``` Node-RED Authentication ``` section. For the username and password, please choose your own as needed.<br><br>
+   Please select the option as shown in the ``` Node-RED Authentication ``` section of Highlights. For the username and password, please choose your own as needed.<br><br>
    
 3. Next, run Node-RED using the following command :
 
