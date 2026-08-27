@@ -177,6 +177,11 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 
 <br><br>
 
+## Node-RED Configuration
+Coming Soon...
+
+<br><br>
+
 ## Get Started
 1. Download and extract this repository.<br><br>
     
@@ -209,7 +214,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 <td width="420" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Config-2.jpg" alt="config-2"></td>
 </tr>
 <tr>
-<td width="840" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Login.jpg" alt="login"></td>
+<td width="840" colspan="2" align="center"><img src="Assets/Documentation/Experiment/NodeRED Admin/Login.jpg" alt="login"></td>
 </tr>
 </table>
 <table>
