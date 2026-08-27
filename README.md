@@ -177,6 +177,17 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 
 <br><br>
 
+## Database
+1. Open ``` XAMPP ```, then start the ``` Apache ``` & ``` MySQL ``` section to run a web server and a database server locally.<br><br>
+
+2. Access the browser first in order to open the database admin panel, please copy the following link: ``` localhost/phpmyadmin/ ```.<br><br>
+
+3. Create a database called ``` logger ```.<br><br>
+
+4. Open the ``` logger ``` database and Import ``` logger.sql ``` in the ``` TH-Monitoring/Src/ ``` directory.
+
+<br><br>
+
 ## Node-RED Configuration
 Coming Soon...
 
