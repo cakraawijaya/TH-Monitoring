@@ -18,7 +18,7 @@ Dasbor pemantauan lingkungan secara real-time — memantau suhu dan kelembapan d
 | Dukungan Aplikasi | Node.js |
 | Platform Integrasi | Node-RED |
 | Protokol Komunikasi | MODBUS TCP/IP |
-| Arsitektur IoT | 3 Layer |
+| Arsitektur IoT | 3 Lapisan |
 | Bahasa Pemrograman | C/C++ |
 | Pustaka Arduino | • WiFi (bawaan)<br>• DHT sensor library oleh Adafruit (Versi: 1.4.6)<br>• modbus-esp8266 oleh Alexander Emelianov (Versi: 4.1.0) |
 | Palet Node-RED | • node-red (bawaan)<br>• node-red-dashboard<br>• node-red-node-ui-table<br>• node-red-node-mysql<br>• node-red-contrib-modbus |
@@ -222,7 +222,7 @@ Dasbor pemantauan lingkungan secara real-time — memantau suhu dan kelembapan d
 
    </td></tr></table>
 
-   Silakan pilih opsi seperti yang ditunjukkan pada bagian ``` Node-RED Authentication ``` di bagian Sorotan. Untuk username dan password, silakan tentukan sendiri sesuai kebutuhan.<br><br>
+   Silakan pilih opsi seperti yang ditunjukkan pada bagian ``` Autentikasi Node-RED ``` di bagian Sorotan. Untuk username dan password, silakan tentukan sendiri sesuai kebutuhan.<br><br>
    
 3. Selanjutnya, jalankan Node-RED menggunakan perintah berikut :
 
