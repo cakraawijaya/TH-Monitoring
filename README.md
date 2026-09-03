@@ -172,7 +172,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
        
        • If ``` ESP32 board ``` cannot process ``` Source Code ``` totally -> Press ``` EN (RST) ``` button -> ``` Restart ```.
 
-       • If ```ESP32 board ``` cannot process ``` Source Code ``` automatically then :<br>
+       • If ``` ESP32 board ``` cannot process ``` Source Code ``` automatically then :<br>
 
       - When information: ``` Uploading... ``` has appeared -> immediately press and hold the ``` BOOT ``` button.<br>
 
