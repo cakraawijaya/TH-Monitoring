@@ -244,7 +244,15 @@ Dasbor pemantauan lingkungan secara real-time — memantau suhu dan kelembapan d
 
 7. Buka menu ``` Import ``` di Node-RED, lalu impor ``` flow_nodered.json ``` di direktori ``` TH-Monitoring/Src/ ```. Pastikan semua flow Node-RED telah berhasil dimuat.<br><br>
 
-8. Kemudian, untuk menjalankan flow tersebut, klik ``` Deploy ```.
+8. Pengaturan ``` Site ``` di Node-RED dapat dikonfigurasi seperti yang ditunjukkan pada contoh di bawah ini :
+
+   <img src="Assets/Documentation/Experiment/Node-RED Config/Site.jpg" alt="node-red-site-config"><br><br>
+
+9. Pengaturan ``` Theme ``` di Node-RED dapat dikonfigurasi seperti yang ditunjukkan pada contoh di bawah ini :
+
+   <img src="Assets/Documentation/Experiment/Node-RED Config/Theme.jpg" alt="node-red-theme-config"><br><br>
+
+10. Kemudian, untuk menjalankan flow tersebut, klik ``` Deploy ```.
 
 <br><br>
 
