@@ -1,6 +1,6 @@
 [
     {
-        "id": "78f04c1128a4100f",
+        "id": "c4171e1dc7d1539d",
         "type": "tab",
         "label": "ESP32 Temperature Humidity Logger",
         "disabled": false,
@@ -8,39 +8,39 @@
         "env": []
     },
     {
-        "id": "196081f0352f3af0",
+        "id": "8ecaf2a9c1e9190c",
         "type": "group",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "DOWNLOAD FILE TO CSV",
         "style": {
             "label": true
         },
         "nodes": [
-            "e59de277e2f488a3",
-            "6754fdfc83ccf7d5",
-            "270b96a238394039",
-            "db3b739ff69854bd",
-            "778e1dc08be9e496",
-            "807cb2c79a23c984",
-            "e8f4f3e2c9a94c78"
+            "4d790f6b73c6b71b",
+            "d4d38b5c9ea9fbf9",
+            "2e8567862d630b3e",
+            "9e7dc32ebc3a3c52",
+            "b235ce78bc3a640e",
+            "cc79527ae5f25f4f",
+            "9a292675090c56b8"
         ],
         "x": 74,
         "y": 919,
-        "w": 942,
+        "w": 952,
         "h": 182
     },
     {
-        "id": "40836f6546617f82",
+        "id": "d6dca56e679c8b1c",
         "type": "group",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "STORE DATA TO DATABASE",
         "style": {
             "label": true
         },
         "nodes": [
-            "e4490a2d78dd322c",
-            "c681dfee683963ac",
-            "bc263a9d365765fb"
+            "e0fb44dbd7f3ccf5",
+            "29dd36e2112e1808",
+            "11fdda1015959aca"
         ],
         "x": 614,
         "y": 59,
@@ -48,26 +48,26 @@
         "h": 82
     },
     {
-        "id": "5d020af5e95b2f0f",
+        "id": "5ef4241e3071afe1",
         "type": "group",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "FILTER TABLE",
         "style": {
             "label": true
         },
         "nodes": [
-            "81c40225139934ae",
-            "6813becc9e0d8ec1",
-            "7d2a5a9b8b1ce378",
-            "0731f89226b0feb7",
-            "e9f81cf86ae13e54",
-            "df41d33c64d8a964",
-            "73acbbe2699ca38a",
-            "b44068ca67893d02",
-            "9153142b40625994",
-            "18b09637292ae514",
-            "ef8d591e536f6f75",
-            "a4e69ed96d6da2d6"
+            "641a2b416955a31a",
+            "2ae63507a0a35725",
+            "022c2e329f789c8c",
+            "62d33e877616c2ad",
+            "bd4a34e778cb1bf4",
+            "460bfefd873db132",
+            "dfdfde2bb50113e9",
+            "d1ccc8ede1ba2ea3",
+            "0316e837d4e6947d",
+            "a80985dc86b152a6",
+            "d00f8ace2a6515a8",
+            "e5cf5f73e80357d9"
         ],
         "x": 74,
         "y": 439,
@@ -75,19 +75,19 @@
         "h": 222
     },
     {
-        "id": "e60475206a7c8a84",
+        "id": "29d54dbbfd4b5e8d",
         "type": "group",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "HAPUS DATA",
         "style": {
             "label": true
         },
         "nodes": [
-            "ed449970653dd819",
-            "cd05144cfc9eba99",
-            "9bf38d8462aab94b",
-            "50403f5c993954e2",
-            "cfc4f627eabf2c49"
+            "3d0719f070d5effe",
+            "7e7be6f8cfdd71ba",
+            "fb1c64dac9a08dd6",
+            "3927945a1068883f",
+            "1ecf4d69cc942c25"
         ],
         "x": 74,
         "y": 699,
@@ -95,18 +95,18 @@
         "h": 182
     },
     {
-        "id": "4ba10ca2f909b10b",
+        "id": "53920931d48e3caa",
         "type": "group",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "Tampilkan Data ke Dashboard",
         "style": {
             "label": true
         },
         "nodes": [
-            "6594cc0b71735e9d",
-            "30397002da674aae",
-            "4b0bcdb747c158f2",
-            "043e0b845b7df3ad"
+            "a822f0e0c4b9c492",
+            "299de7fe2b3d736b",
+            "3168a26679f3cfb0",
+            "d13fff88adbc3f09"
         ],
         "x": 614,
         "y": 179,
@@ -114,10 +114,10 @@
         "h": 222
     },
     {
-        "id": "e4490a2d78dd322c",
+        "id": "e0fb44dbd7f3ccf5",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "40836f6546617f82",
+        "z": "c4171e1dc7d1539d",
+        "g": "d6dca56e679c8b1c",
         "name": "SAVE TO DATABASE",
         "func": "var temperature = msg.payload.temperature;\nvar humidity = msg.payload.humidity;\nvar unixtime = parseInt(((Date.now() / 1000).toFixed(10)));\n\nmsg.topic =\n\"INSERT INTO sensor(temperature,humidity,unixtime) VALUES(\" +\ntemperature + \",\" +\nhumidity + \",\" +\nunixtime + \")\";\n\nreturn msg;",
         "outputs": 1,
@@ -130,15 +130,15 @@
         "y": 100,
         "wires": [
             [
-                "bc263a9d365765fb"
+                "11fdda1015959aca"
             ]
         ]
     },
     {
-        "id": "c681dfee683963ac",
+        "id": "29dd36e2112e1808",
         "type": "mysql",
-        "z": "78f04c1128a4100f",
-        "g": "40836f6546617f82",
+        "z": "c4171e1dc7d1539d",
+        "g": "d6dca56e679c8b1c",
         "mydb": "3d1a3bc72d2fe121",
         "name": "",
         "x": 1110,
@@ -148,25 +148,25 @@
         ]
     },
     {
-        "id": "81c40225139934ae",
+        "id": "641a2b416955a31a",
         "type": "mysql",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "mydb": "8f46820fd1f28cc1",
         "name": "",
         "x": 630,
         "y": 620,
         "wires": [
             [
-                "ef8d591e536f6f75"
+                "d00f8ace2a6515a8"
             ]
         ]
     },
     {
-        "id": "ed449970653dd819",
+        "id": "3d0719f070d5effe",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "e60475206a7c8a84",
+        "z": "c4171e1dc7d1539d",
+        "g": "29d54dbbfd4b5e8d",
         "name": "DELETE DATABASE",
         "func": "msg.topic = \"DELETE FROM sensor\";\n\nreturn msg;",
         "outputs": 1,
@@ -179,36 +179,36 @@
         "y": 740,
         "wires": [
             [
-                "cd05144cfc9eba99"
+                "7e7be6f8cfdd71ba"
             ]
         ]
     },
     {
-        "id": "cd05144cfc9eba99",
+        "id": "7e7be6f8cfdd71ba",
         "type": "mysql",
-        "z": "78f04c1128a4100f",
-        "g": "e60475206a7c8a84",
+        "z": "c4171e1dc7d1539d",
+        "g": "29d54dbbfd4b5e8d",
         "mydb": "aa9293a2720673f0",
         "name": "",
         "x": 550,
         "y": 840,
         "wires": [
             [
-                "9bf38d8462aab94b",
-                "cfc4f627eabf2c49"
+                "fb1c64dac9a08dd6",
+                "1ecf4d69cc942c25"
             ]
         ]
     },
     {
-        "id": "6813becc9e0d8ec1",
+        "id": "2ae63507a0a35725",
         "type": "ui_table",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
-        "group": "7e4ca4b84762c487",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
+        "group": "2d58e99afdab9632",
         "name": "",
         "order": 8,
         "width": 12,
-        "height": 9,
+        "height": 15,
         "columns": [
             {
                 "field": "number",
@@ -258,10 +258,10 @@
         "wires": []
     },
     {
-        "id": "9bf38d8462aab94b",
+        "id": "fb1c64dac9a08dd6",
         "type": "debug",
-        "z": "78f04c1128a4100f",
-        "g": "e60475206a7c8a84",
+        "z": "c4171e1dc7d1539d",
+        "g": "29d54dbbfd4b5e8d",
         "name": "debug 3",
         "active": true,
         "tosidebar": true,
@@ -276,13 +276,13 @@
         "wires": []
     },
     {
-        "id": "7d2a5a9b8b1ce378",
+        "id": "022c2e329f789c8c",
         "type": "ui_date_picker",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "",
         "label": "Tanggal",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 1,
         "width": 9,
         "height": 1,
@@ -294,17 +294,17 @@
         "y": 480,
         "wires": [
             [
-                "e9f81cf86ae13e54"
+                "bd4a34e778cb1bf4"
             ]
         ]
     },
     {
-        "id": "0731f89226b0feb7",
+        "id": "62d33e877616c2ad",
         "type": "ui_button",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 2,
         "width": 3,
         "height": 1,
@@ -323,15 +323,15 @@
         "y": 620,
         "wires": [
             [
-                "b44068ca67893d02"
+                "d1ccc8ede1ba2ea3"
             ]
         ]
     },
     {
-        "id": "e9f81cf86ae13e54",
+        "id": "bd4a34e778cb1bf4",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "INPUT TANGGAL",
         "func": "var waktu_WIB = 7 * 60 * 60;\nvar tanggal = parseInt(msg.payload / 1000) - waktu_WIB;\n\nflow.set('tanggal', tanggal);\n\nmsg.payload = tanggal;\nreturn msg;",
         "outputs": 1,
@@ -347,10 +347,10 @@
         ]
     },
     {
-        "id": "df41d33c64d8a964",
+        "id": "460bfefd873db132",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "INPUT WAKTU AWAL",
         "func": "var waktu_awal = parseInt(msg.payload / 1000);\nflow.set('waktu_awal', waktu_awal);\nmsg.payload = waktu_awal;\nreturn msg;",
         "outputs": 1,
@@ -366,10 +366,10 @@
         ]
     },
     {
-        "id": "73acbbe2699ca38a",
+        "id": "dfdfde2bb50113e9",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "INPUT WAKTU AKHIR",
         "func": "var waktu_akhir = parseInt(msg.payload / 1000);\nflow.set('waktu_akhir', waktu_akhir);\nmsg.payload = waktu_akhir;\nreturn msg;",
         "outputs": 1,
@@ -385,10 +385,10 @@
         ]
     },
     {
-        "id": "b44068ca67893d02",
+        "id": "d1ccc8ede1ba2ea3",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "DATABASE QUERY",
         "func": "var tanggal = flow.get('tanggal');\nvar waktu_awal = flow.get('waktu_awal');\nvar waktu_akhir = flow.get('waktu_akhir');\n\nvar start = tanggal + waktu_awal;\nvar end = tanggal + waktu_akhir;\n\nmsg.topic = \"SELECT * FROM sensor WHERE unixtime BETWEEN \" + start + \" AND \" + end + \";\";\nmsg.payload = [tanggal, waktu_awal, waktu_akhir, start, end];\nreturn msg;",
         "outputs": 1,
@@ -401,21 +401,21 @@
         "y": 620,
         "wires": [
             [
-                "81c40225139934ae",
-                "a4e69ed96d6da2d6"
+                "641a2b416955a31a",
+                "e5cf5f73e80357d9"
             ]
         ]
     },
     {
-        "id": "6594cc0b71735e9d",
+        "id": "a822f0e0c4b9c492",
         "type": "ui_chart",
-        "z": "78f04c1128a4100f",
-        "g": "4ba10ca2f909b10b",
+        "z": "c4171e1dc7d1539d",
+        "g": "53920931d48e3caa",
         "name": "",
-        "group": "d6ce21bc59035408",
+        "group": "9451d65392ddc55d",
         "order": 1,
         "width": 12,
-        "height": 4,
+        "height": 7,
         "label": "Temperature",
         "chartType": "line",
         "legend": "false",
@@ -452,15 +452,15 @@
         ]
     },
     {
-        "id": "30397002da674aae",
+        "id": "299de7fe2b3d736b",
         "type": "ui_chart",
-        "z": "78f04c1128a4100f",
-        "g": "4ba10ca2f909b10b",
+        "z": "c4171e1dc7d1539d",
+        "g": "53920931d48e3caa",
         "name": "",
-        "group": "d6ce21bc59035408",
+        "group": "9451d65392ddc55d",
         "order": 2,
         "width": 12,
-        "height": 4,
+        "height": 7,
         "label": "Humidity",
         "chartType": "line",
         "legend": "false",
@@ -497,12 +497,12 @@
         ]
     },
     {
-        "id": "4b0bcdb747c158f2",
+        "id": "3168a26679f3cfb0",
         "type": "ui_gauge",
-        "z": "78f04c1128a4100f",
-        "g": "4ba10ca2f909b10b",
+        "z": "c4171e1dc7d1539d",
+        "g": "53920931d48e3caa",
         "name": "",
-        "group": "3250b3d94e1fa8e6",
+        "group": "34d71dfb100eda91",
         "order": 2,
         "width": 6,
         "height": 3,
@@ -526,12 +526,12 @@
         "wires": []
     },
     {
-        "id": "043e0b845b7df3ad",
+        "id": "d13fff88adbc3f09",
         "type": "ui_gauge",
-        "z": "78f04c1128a4100f",
-        "g": "4ba10ca2f909b10b",
+        "z": "c4171e1dc7d1539d",
+        "g": "53920931d48e3caa",
         "name": "",
-        "group": "3250b3d94e1fa8e6",
+        "group": "34d71dfb100eda91",
         "order": 1,
         "width": 6,
         "height": 3,
@@ -555,14 +555,14 @@
         "wires": []
     },
     {
-        "id": "9153142b40625994",
+        "id": "0316e837d4e6947d",
         "type": "ui_text_input",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "",
         "label": "Dari",
         "tooltip": "",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 3,
         "width": 5,
         "height": 1,
@@ -577,19 +577,19 @@
         "y": 520,
         "wires": [
             [
-                "df41d33c64d8a964"
+                "460bfefd873db132"
             ]
         ]
     },
     {
-        "id": "18b09637292ae514",
+        "id": "a80985dc86b152a6",
         "type": "ui_text_input",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "",
         "label": "Sampai",
         "tooltip": "",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 4,
         "width": 4,
         "height": 1,
@@ -604,15 +604,15 @@
         "y": 560,
         "wires": [
             [
-                "73acbbe2699ca38a"
+                "dfdfde2bb50113e9"
             ]
         ]
     },
     {
-        "id": "ef8d591e536f6f75",
+        "id": "d00f8ace2a6515a8",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "SET PARAMETER",
         "func": "let array = msg.payload;\n\n\narray.forEach((data, index) => {\n    const date = new Date(data.unixtime * 1000);\n    data.unixtime = date.toLocaleString('es-US',{\n        timeZone: \"Asia/Jakarta\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false\n    });\n\n    data.temperature = data.temperature + \" °C\";\n    data.humidity = data.humidity + \" %\";\n    data.number = index + 1;\n\n});\n\n\nmsg.payload = array;\n\nreturn msg;\n",
         "outputs": 1,
@@ -625,15 +625,15 @@
         "y": 620,
         "wires": [
             [
-                "6813becc9e0d8ec1"
+                "2ae63507a0a35725"
             ]
         ]
     },
     {
-        "id": "e59de277e2f488a3",
+        "id": "4d790f6b73c6b71b",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "name": "QUERY SELECT",
         "func": "var tanggal = flow.get('tanggal');\nvar waktu_awal = flow.get('waktu_awal');\nvar waktu_akhir = flow.get('waktu_akhir');\n\nvar start = tanggal + waktu_awal;\nvar end = tanggal + waktu_akhir;\n\nmsg.topic = \"SELECT * FROM sensor WHERE unixtime BETWEEN \" + start + \" AND \" + end + \";\";\n\nnode.warn(msg.topic);\nreturn msg;",
         "outputs": 1,
@@ -646,15 +646,15 @@
         "y": 960,
         "wires": [
             [
-                "778e1dc08be9e496"
+                "b235ce78bc3a640e"
             ]
         ]
     },
     {
-        "id": "6754fdfc83ccf7d5",
+        "id": "d4d38b5c9ea9fbf9",
         "type": "file",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -666,15 +666,15 @@
         "y": 1060,
         "wires": [
             [
-                "e8f4f3e2c9a94c78"
+                "9a292675090c56b8"
             ]
         ]
     },
     {
-        "id": "270b96a238394039",
+        "id": "2e8567862d630b3e",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "name": "prepare data to csv",
         "func": "var data = msg.payload.reverse();\nvar time = [];\nvar temperature = [];\nvar humidity = [];\n\nfor (var i = 0; i < msg.payload.length; i++) {\n\n    time[i] = new Date(msg.payload[i].unixtime * 1000).toLocaleString('en-US', {\n        timeZone: \"Asia/Jakarta\",\n        hour: \"2-digit\",\n        minute: \"2-digit\",\n        hour12: false\n    });\n\n    temperature[i] = msg.payload[i].temperature;\n    humidity[i] = msg.payload[i].humidity;\n}\n\n\n//header CSV\n\nvar csv = \"REPORT MONITORING DHT11 \" + new Date().toLocaleDateString().replace(/\\//g, '-') + \"\\n\";\ncsv += \"time,temperature,humidity\\n\";\n\nfor (var j = msg.payload.length - 1; j >= 0; j--) {\n    csv += time[j] + \",\" + temperature[j] + \",\" + humidity[j] + \"\\n\";\n}\n\nmsg.payload = csv;\n\n//directory file dan penamaan file\nvar basePath = \"C:/Users/DEVAN/.node-red/datalog/\";\nvar fileName = \"data_export\" + new Date().toLocaleString().replace(/\\//g, '-') + \".csv\";\nmsg.filename = basePath + fileName;\nflow.set('fileLocation', basePath + fileName);\n\nreturn msg;",
         "outputs": 1,
@@ -687,17 +687,17 @@
         "y": 1060,
         "wires": [
             [
-                "6754fdfc83ccf7d5"
+                "d4d38b5c9ea9fbf9"
             ]
         ]
     },
     {
-        "id": "db3b739ff69854bd",
+        "id": "9e7dc32ebc3a3c52",
         "type": "ui_button",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "name": "",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 5,
         "width": 3,
         "height": 1,
@@ -716,30 +716,30 @@
         "y": 960,
         "wires": [
             [
-                "e59de277e2f488a3"
+                "4d790f6b73c6b71b"
             ]
         ]
     },
     {
-        "id": "778e1dc08be9e496",
+        "id": "b235ce78bc3a640e",
         "type": "mysql",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "mydb": "83e5f5ada7b54d75",
         "name": "",
         "x": 570,
         "y": 960,
         "wires": [
             [
-                "270b96a238394039"
+                "2e8567862d630b3e"
             ]
         ]
     },
     {
-        "id": "bc263a9d365765fb",
+        "id": "11fdda1015959aca",
         "type": "delay",
-        "z": "78f04c1128a4100f",
-        "g": "40836f6546617f82",
+        "z": "c4171e1dc7d1539d",
+        "g": "d6dca56e679c8b1c",
         "name": "",
         "pauseType": "rate",
         "timeout": "5",
@@ -757,17 +757,17 @@
         "y": 100,
         "wires": [
             [
-                "c681dfee683963ac"
+                "29dd36e2112e1808"
             ]
         ]
     },
     {
-        "id": "50403f5c993954e2",
+        "id": "3927945a1068883f",
         "type": "ui_button",
-        "z": "78f04c1128a4100f",
-        "g": "e60475206a7c8a84",
+        "z": "c4171e1dc7d1539d",
+        "g": "29d54dbbfd4b5e8d",
         "name": "",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 7,
         "width": 3,
         "height": 1,
@@ -786,15 +786,15 @@
         "y": 740,
         "wires": [
             [
-                "ed449970653dd819"
+                "3d0719f070d5effe"
             ]
         ]
     },
     {
-        "id": "a4e69ed96d6da2d6",
+        "id": "e5cf5f73e80357d9",
         "type": "debug",
-        "z": "78f04c1128a4100f",
-        "g": "5d020af5e95b2f0f",
+        "z": "c4171e1dc7d1539d",
+        "g": "5ef4241e3071afe1",
         "name": "debug 6",
         "active": true,
         "tosidebar": true,
@@ -808,10 +808,10 @@
         "wires": []
     },
     {
-        "id": "807cb2c79a23c984",
+        "id": "cc79527ae5f25f4f",
         "type": "ui_toast",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "position": "top right",
         "displayTime": "",
         "highlight": "",
@@ -828,10 +828,10 @@
         "wires": []
     },
     {
-        "id": "e8f4f3e2c9a94c78",
+        "id": "9a292675090c56b8",
         "type": "change",
-        "z": "78f04c1128a4100f",
-        "g": "196081f0352f3af0",
+        "z": "c4171e1dc7d1539d",
+        "g": "8ecaf2a9c1e9190c",
         "name": "",
         "rules": [
             {
@@ -865,14 +865,14 @@
         "y": 1060,
         "wires": [
             [
-                "807cb2c79a23c984"
+                "cc79527ae5f25f4f"
             ]
         ]
     },
     {
-        "id": "665a1dd96c0fae64",
+        "id": "dc0ec170e9cc2d9e",
         "type": "modbus-read",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "",
         "topic": "",
         "showStatusActivities": false,
@@ -897,15 +897,15 @@
         "y": 240,
         "wires": [
             [
-                "28e3ecda9004c2fa"
+                "d79cccab9515b898"
             ],
             []
         ]
     },
     {
-        "id": "28e3ecda9004c2fa",
+        "id": "d79cccab9515b898",
         "type": "function",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "Parsing data",
         "func": "var temperature = msg.payload[0] / 10;\nvar humidity = msg.payload[1] / 10;\n\nreturn [\n    {\n        payload: {\n            temperature: temperature,\n            humidity: humidity\n        }\n    },\n    {\n        payload: temperature\n    },\n    {\n        payload: humidity\n    }\n];",
         "outputs": 3,
@@ -918,23 +918,23 @@
         "y": 240,
         "wires": [
             [
-                "e4490a2d78dd322c"
+                "e0fb44dbd7f3ccf5"
             ],
             [
-                "6594cc0b71735e9d",
-                "043e0b845b7df3ad"
+                "a822f0e0c4b9c492",
+                "d13fff88adbc3f09"
             ],
             [
-                "30397002da674aae",
-                "4b0bcdb747c158f2"
+                "299de7fe2b3d736b",
+                "3168a26679f3cfb0"
             ]
         ]
     },
     {
-        "id": "cfc4f627eabf2c49",
+        "id": "1ecf4d69cc942c25",
         "type": "function",
-        "z": "78f04c1128a4100f",
-        "g": "e60475206a7c8a84",
+        "z": "c4171e1dc7d1539d",
+        "g": "29d54dbbfd4b5e8d",
         "name": "REFRESH DATA",
         "func": "msg.payload = [];\nreturn msg;",
         "outputs": 1,
@@ -947,16 +947,16 @@
         "y": 760,
         "wires": [
             [
-                "ef8d591e536f6f75"
+                "d00f8ace2a6515a8"
             ]
         ]
     },
     {
-        "id": "9a29e3cf35948a33",
+        "id": "c1e585431d1b62e7",
         "type": "ui_spacer",
-        "z": "78f04c1128a4100f",
+        "z": "c4171e1dc7d1539d",
         "name": "spacer",
-        "group": "7e4ca4b84762c487",
+        "group": "2d58e99afdab9632",
         "order": 6,
         "width": 9,
         "height": 1
@@ -992,10 +992,10 @@
         "charset": "UTF8"
     },
     {
-        "id": "7e4ca4b84762c487",
+        "id": "2d58e99afdab9632",
         "type": "ui_group",
         "name": "TABLE",
-        "tab": "23ce40b25f59cdd3",
+        "tab": "85aaa15b26661581",
         "order": 2,
         "disp": true,
         "width": 12,
@@ -1003,10 +1003,10 @@
         "className": ""
     },
     {
-        "id": "d6ce21bc59035408",
+        "id": "9451d65392ddc55d",
         "type": "ui_group",
         "name": "CHART",
-        "tab": "23ce40b25f59cdd3",
+        "tab": "85aaa15b26661581",
         "order": 3,
         "disp": true,
         "width": 12,
@@ -1014,10 +1014,10 @@
         "className": ""
     },
     {
-        "id": "3250b3d94e1fa8e6",
+        "id": "34d71dfb100eda91",
         "type": "ui_group",
         "name": "GAUGE",
-        "tab": "23ce40b25f59cdd3",
+        "tab": "85aaa15b26661581",
         "order": 1,
         "disp": true,
         "width": "12",
@@ -1065,15 +1065,16 @@
         "showLogs": true
     },
     {
-        "id": "23ce40b25f59cdd3",
+        "id": "85aaa15b26661581",
         "type": "ui_tab",
         "name": "Temperature Humidity Monitoring",
         "icon": "dashboard",
+        "order": 4,
         "disabled": false,
         "hidden": false
     },
     {
-        "id": "d3adb13a99c99a65",
+        "id": "a0e74ea11baff18f",
         "type": "global-config",
         "env": [],
         "modules": {
