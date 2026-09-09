@@ -23,7 +23,7 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 | Arduino Library | • WiFi (default)<br>• DHT sensor library by Adafruit (Version: 1.4.6)<br>• modbus-esp8266 by Alexander Emelianov (Version: 4.1.0) |
 | Node-RED Pallete | • node-red (default)<br>• node-red-dashboard<br>• node-red-node-ui-table<br>• node-red-node-mysql<br>• node-red-contrib-modbus |
 | Sensor | DHT11: Air Temperature & Humidity (x1) |
-| Other Components | • Micro USB cable - USB type A (x1)<br>• ESP32 expansion board (x1)<br>• Adaptor DC 9V 1A (x1)<br>• Jumper cable (1 set)<br>• Project Box X3 (x1)<br>• Screws (x4)<br>• Bolts M3 x 12 (x4)<br>• Bolts M4 x 10 (x2)<br>• Nuts M3 (x4)<br>• Nuts M4 (x2) |
+| Other Components | • Micro USB cable - USB type A (x1)<br>• ESP32 expansion board (x1)<br>• Adaptor DC 9V 1A (x1)<br>• Jumper cable (1 set)<br>• Project Box X3 (x1)<br>• Screws (x4)<br>• Bolts M3 x 16 (x4)<br>• Bolts M4 x 10 (x2)<br>• Nuts M3 (x4)<br>• Nuts M4 (x2) |
 
 <br><br>
 
