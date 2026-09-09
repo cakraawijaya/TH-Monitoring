@@ -273,10 +273,20 @@ Real-time environmental monitoring dashboard — tracks temperature and humidity
 
 <table>
 <tr>
-<th width="840">Device</th>
+<th width="840">Device Prototype</th>
 </tr>
 <tr>
-<td align="center"><img src="Assets/Documentation/Experiment/Device.jpg" alt="device"></td>
+<td align="center"><img src="Assets/Documentation/Experiment/Prototype/Device.jpg" alt="device"></td>
+</tr>
+</table>
+<table>
+<tr>
+<th width="840" colspan="3">Enclosed Device</th>
+</tr>
+<tr>
+<td width="280" align="center"><img src="Assets/Documentation/Experiment/Cover/Device-1.jpg" alt="device-1"></td>
+<td width="280" align="center"><img src="Assets/Documentation/Experiment/Cover/Device-2.jpg" alt="device-2"></td>
+<td width="280" align="center"><img src="Assets/Documentation/Experiment/Cover/Device-3.jpg" alt="device-3"></td>
 </tr>
 </table>
 <table>
